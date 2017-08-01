@@ -3,9 +3,11 @@ import os
 import glob
 import codecs
 import spacy
-import utils_nlp
 import json
+
 from pycorenlp import StanfordCoreNLP
+
+from . import utils_nlp
 
 
 def get_start_and_end_offset_of_token_from_spacy(token):
@@ -104,7 +106,9 @@ def check_brat_annotation_and_text_compatibility(brat_folder):
     '''
     Check if brat annotation and text files are compatible.
     '''
+
     dataset_type =  os.path.basename(brat_folder)
+
     print("Checking the validity of BRAT-formatted {0} set... ".format(dataset_type), end='')
     text_filepaths = sorted(glob.glob(os.path.join(brat_folder, '*.txt')))
     for text_filepath in text_filepaths:

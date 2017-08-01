@@ -1,27 +1,29 @@
 import matplotlib
 matplotlib.use('Agg')
-import train
-import dataset as ds
 import tensorflow as tf
 from tensorflow.contrib.tensorboard.plugins import projector
-from entity_lstm import EntityLSTM
-import utils
 import os
-import conll_to_brat
 import glob
 import codecs
 import shutil
 import time
 import copy
-import evaluate
 import random
 import pickle
-import brat_to_conll
-import numpy as np
-import utils_nlp
 import distutils
 import configparser
 from pprint import pprint
+import numpy as np
+
+from . import utils_nlp
+from . import train
+from . import brat_to_conll
+from . import conll_to_brat
+from . import utils
+from . import dataset as ds
+from . import evaluate
+from .entity_lstm import EntityLSTM
+
 # http://stackoverflow.com/questions/42217532/tensorflow-version-1-0-0-rc2-on-windows-opkernel-op-bestsplits-device-typ
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 print('NeuroNER version: {0}'.format('1.0-dev'))

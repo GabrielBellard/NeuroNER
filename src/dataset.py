@@ -1,8 +1,6 @@
 import sklearn.preprocessing
-import utils
 import collections
 import codecs
-import utils_nlp
 import re
 import time
 import token
@@ -10,6 +8,8 @@ import os
 import pickle
 import random
 
+from . import utils_nlp
+from . import utils
 
 class Dataset(object):
     """A class for handling data sets."""

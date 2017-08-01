@@ -10,9 +10,11 @@ import os
 import argparse
 from argparse import RawTextHelpFormatter
 import sys
-from neuroner import NeuroNER
-
 import warnings
+
+from .neuroner import NeuroNER
+
+
 warnings.filterwarnings('ignore')
 
 

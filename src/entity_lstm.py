@@ -1,10 +1,11 @@
 import tensorflow as tf
 import re
 import time
-import utils_tf
-import utils_nlp
 import os
 import pickle
+
+from . import utils_tf
+from . import utils_nlp
 
 def bidirectional_LSTM(input, hidden_state_dimension, initializer, sequence_length=None, output_sequence=True):
 
