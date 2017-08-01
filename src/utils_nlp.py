@@ -3,9 +3,10 @@ Miscellaneous utility functions for natural language processing
 '''
 import codecs
 import re
-from . import utils
 import os
 import numpy as np
+
+from . import utils
 
 def load_tokens_from_pretrained_token_embeddings(parameters):
     file_input = codecs.open(parameters['token_pretrained_embedding_filepath'], 'r', 'UTF-8')

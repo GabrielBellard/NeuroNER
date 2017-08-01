@@ -5,13 +5,15 @@ import os
 import pickle
 from pprint import pprint
 import shutil
-import utils
-import main
-from entity_lstm import EntityLSTM
-import tensorflow as tf
-import utils_tf
-from tensorflow.python.tools.inspect_checkpoint import print_tensors_in_checkpoint_file
 import glob
+
+import tensorflow as tf
+from tensorflow.python.tools.inspect_checkpoint import print_tensors_in_checkpoint_file
+
+from . import utils_tf
+from . import utils
+from . import main
+from .entity_lstm import EntityLSTM
 
 def trim_dataset_pickle(input_dataset_filepath, output_dataset_filepath=None, delete_token_mappings=False):
     '''

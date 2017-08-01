@@ -1,9 +1,10 @@
 import os
+import pickle
+import codecs
+
 import tensorflow as tf
 import numpy as np
 import sklearn.metrics
-import pickle
-import codecs
 #from tensorflow.python.tools.inspect_checkpoint import print_tensors_in_checkpoint_file
 
 from . import utils_tf

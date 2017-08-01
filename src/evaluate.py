@@ -1,9 +1,10 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import sklearn.metrics
 import os
 import json
 import time
+
+import sklearn.metrics
+import numpy as np
+import matplotlib.pyplot as plt
 
 from . import utils_nlp
 from . import utils_plots

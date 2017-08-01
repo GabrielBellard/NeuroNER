@@ -1,7 +1,5 @@
 import matplotlib
 matplotlib.use('Agg')
-import tensorflow as tf
-from tensorflow.contrib.tensorboard.plugins import projector
 import os
 import glob
 import codecs
@@ -14,6 +12,9 @@ import distutils
 import configparser
 from pprint import pprint
 import numpy as np
+
+import tensorflow as tf
+from tensorflow.contrib.tensorboard.plugins import projector
 
 from . import utils_nlp
 from . import train
